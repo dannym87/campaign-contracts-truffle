@@ -1,0 +1,10 @@
+version: "2.4"
+
+services:
+  node:
+    build: .
+    volumes:
+      - .:/usr/app
+    environment:
+      - WALLET_MNEMONIC=${WALLET_MNEMONIC}
+      - PROVIDER_URL=${PROVIDER_URL}
